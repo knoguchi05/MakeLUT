@@ -1,5 +1,5 @@
 # MakeLUT
-1. Creating a correlation plot between Beta and Pt.
+## Creating a correlation plot between Beta and Pt.
 ### setup
 - Set up the input files in the BetaStudy.h file.
 - Set up the following parameters in the BetaStudy.C file.
@@ -13,17 +13,32 @@
 ```sh
 $./BetaBatch.sh
 ```
+### output 
 - The following files will be created.
+----------------------------------
+| File Name | description |
+|:------------:|:------------:|
+| ./PDF/outputFileName.pdf | correlation plot between Beta and Pt |
+| ./root/outputFileName.root | Input to FittingLUT.C | 
+
+## Fitting Beta and Pt correlations, creating LUTs
+### setup
+- Set up the following parameters in the BetaStudy.C file.
 ----------------------------------
 | parameters | description |
 |:------------:|:------------:|
-| outputFileName.pdf | correlation plot between Beta and Pt |
-| outputFileName.root | Input to FittingLUT.C | 
-
-2. Fitting Beta and Pt correlations, creating LUTs
-### setup
+| IsChargeSidePlus | true(Charge *Side > 0)| 
+| inputRoot | input root (outputFileName.root)|
+| outputFileName | |
 
 ## run
 ```sh
 $./FitBatch.sh
 ```
+### output 
+- The following files will be created.
+----------------------------------
+| File Name | description |
+|:------------:|:------------:|
+| ./LUT/outputFileName_newLUT_plus(minus).lut | New LUT |
+| ./PDF/outputFileName_fit_plus(minus).pdf | Fitting Result | 
