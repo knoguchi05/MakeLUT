@@ -23,7 +23,7 @@ $./BetaBatch.sh
 
 ## Fitting Beta and Pt correlations, creating LUTs
 ### setup
-- Set up the following parameters in the BetaStudy.C file.
+- Set up the following parameters in the FittingLUT.C file.
 ----------------------------------
 | parameters | description |
 |:------------:|:------------:|
