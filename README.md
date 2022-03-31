@@ -18,8 +18,8 @@ $./BetaBatch.sh
 ----------------------------------
 | File Name | description |
 |:------------:|:------------:|
-| ./PDF/outputFileName.pdf | correlation plot between Beta and Pt |
-| ./root/outputFileName.root | Input to FittingLUT.C | 
+| ./PDF/outputFileName_plus(minus).pdf | correlation plot between Beta and Pt |
+| ./root/outputFileName_plus(minus).root | Input to FittingLUT.C | 
 
 ## Fitting Beta and Pt correlations, creating LUTs
 ### setup
@@ -28,7 +28,7 @@ $./BetaBatch.sh
 | parameters | description |
 |:------------:|:------------:|
 | IsChargeSidePlus | true(Charge *Side > 0)| 
-| inputRoot | input root (outputFileName.root)|
+| inputRoot | input root (outputFileName_plus(minus).root)|
 | outputFileName | |
 
 ## run
