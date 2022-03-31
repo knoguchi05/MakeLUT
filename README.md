@@ -21,7 +21,7 @@ $./BetaBatch.sh
 | ./PDF/outputFileName_plus(minus).pdf | correlation plot between Beta and Pt |
 | ./root/outputFileName_plus(minus).root | Input to FittingLUT.C | 
 
-## Fitting Beta and Pt correlations, creating LUTs
+## Fitting Beta and Pt correlations, creating LUT
 ### setup
 - Set up the following parameters in the FittingLUT.C file.
 ----------------------------------
